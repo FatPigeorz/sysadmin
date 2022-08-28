@@ -1,0 +1,13 @@
+[Unit]
+Description=UCB Sysadmin DECAL toy service
+Requires=network.target
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/home/wjh/sysadmin/b7/run
+User=wjh
+Restart=always
+RestartSec=10
